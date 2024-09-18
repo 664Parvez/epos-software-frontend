@@ -1,0 +1,57 @@
+#side_bar_left {
+    width: max(100% - 85%);
+    height: 100%;
+    border-right: 1px solid var(--border-color);
+    position: fixed;
+    padding: 10px 20px;
+    overflow-y: scroll;
+    background-color: var(--white-color);
+    top: 60px;
+}
+#side_bar_left ul li {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+}
+#side_bar_left ul li a {
+    color: var(--black-color);
+}
+#side_bar_left ul li:hover {
+    background: var(--forth-color);
+    border-radius: 5px;
+}
+#side_bar_left ul li:hover a {
+    color: var(--black-color);
+}
+
+#side_bar_left #bottom_menu {
+    margin-top: 20px;
+}
+#side_bar_left .side_menu_icon {
+    color: var(--third-color);
+}
+#side_bar_left ul li:hover .side_menu_icon {
+    color: var(--black-color);
+}
+
+#user_div .user_inner {
+    background-color: var(--white-color);
+    padding: 10px;
+    box-shadow: 2px 2px 12px var(--shadow-color);
+    border-radius: 5px;
+}
+#user_div .user_inner .user_inner_image {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#user_div .user_inner .user_inner_image img {
+    height: 50px;
+    width: 50px;
+}
+#user_div .btn {
+    background-color: var(--forth-color);
+    font-size: 15px;
+}

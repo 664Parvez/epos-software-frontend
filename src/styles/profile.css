@@ -1,0 +1,48 @@
+.profile_section {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+.profile_section .profile_image {
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile_section img {
+    height: 80px;
+    width: 80px;
+}
+.profile_section .order_and_earn {
+    background-color: var(--bg-color);
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+.order_icon .icon {
+    background-color: var(--fifth-color);
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 3px;
+    color: var(--white-color);
+}
+.earn_icon .icon {
+    background-color: var(--third-color);
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 3px;
+    color: var(--white-color);
+}
+.logout_link .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+
+.profile_right p {
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .profile_right p {
+        margin-top: 10px;
+    }
+}

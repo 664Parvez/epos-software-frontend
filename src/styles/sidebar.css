@@ -13,14 +13,14 @@
     padding-bottom: 7px;
     padding-left: 10px;
 }
-#side_bar_left ul li a {
+#side_bar_left ul a li {
     color: var(--black-color);
 }
 #side_bar_left ul li:hover {
     background: var(--forth-color);
     border-radius: 5px;
 }
-#side_bar_left ul li:hover a {
+#side_bar_left ul a li:hover {
     color: var(--black-color);
 }
 

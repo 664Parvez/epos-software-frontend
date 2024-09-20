@@ -12,29 +12,39 @@ const Sidebar = () => {
         <>
             <div id='side_bar_left'>
                 <ul>
-                    <li>
-                        <Link to="/dashboard"><MdOutlineSpaceDashboard className='side_menu_icon' /> Dashboard</Link>
-                    </li>
-                    <li>
-                        <Link to="/"><MdFastfood className='side_menu_icon' /> Menu</Link>
-                    </li>
-                    <li>
-                        <Link to="/order-list"><MdOutlineBorderColor className='side_menu_icon' /> Order List</Link>
-                    </li>
-                    <li>
-                        <Link to="/accounting"><MdOutlineAccountBalanceWallet className='side_menu_icon' /> Accounting</Link>
-                    </li>
-                    <li>
-                        <Link to="/delivery"><MdOutlineRestaurantMenu className='side_menu_icon' /> Ongoing Order</Link>
-                    </li>
+                    <Link to="/dashboard">
+                        <li>
+                            <MdOutlineSpaceDashboard className='side_menu_icon' /> Dashboard
+                        </li>
+                    </Link>
+                    <Link to="/">
+                        <li>
+                            <MdFastfood className='side_menu_icon' /> Menu
+                        </li>
+                    </Link>
+                    <Link to="/order-list">
+                        <li>
+                            <MdOutlineBorderColor className='side_menu_icon' /> Order List
+                        </li>
+                    </Link>
+                    <Link to="/accounting">
+                        <li>
+                            <MdOutlineAccountBalanceWallet className='side_menu_icon' /> Accounting
+                        </li>
+                    </Link>
+                    <Link to="/delivery">
+                        <li>
+                            <MdOutlineRestaurantMenu className='side_menu_icon' /> Ongoing Order
+                        </li>
+                    </Link>
                 </ul>
 
                 <hr />
 
                 <ul id='bottom_menu'>
-                    <li><Link to="/settings"><MdOutlineSettings className='side_menu_icon' /> Settings</Link></li>
-                    <li><Link to="/help-center"><MdHelp className='side_menu_icon' /> Help Center</Link></li>
-                    <li><Link to="/logout"><MdLogout className='side_menu_icon' /> Logout</Link></li>
+                    <Link to="/settings"><li><MdOutlineSettings className='side_menu_icon' /> Settings</li></Link>  
+                    <Link to="/help-center"><li><MdHelp className='side_menu_icon' /> Help Center</li></Link>
+                    <Link to="/logout"><li><MdLogout className='side_menu_icon' /> Logout</li></Link>
                 </ul>
 
                 <hr />

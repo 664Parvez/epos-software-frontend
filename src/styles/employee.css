@@ -1,0 +1,13 @@
+.employees_div {
+    background: var(--white-color);
+    padding: 15px;
+    border-radius: 10px;
+    /* border-left: 6px solid var(--fifth-color); */
+    color: var(--black-color);
+}
+.online {
+    height: 10px;
+    width: 10px;
+    background-color: var(--sixth-color);
+    border-radius: 50%;
+}

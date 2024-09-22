@@ -128,7 +128,7 @@ const Reservation = () => {
                                                         <h5>Table: {items.table}</h5>
                                                     </div>
                                                     <div>
-                                                        <h5>Dinner</h5>
+                                                        <p>Dinner</p>
                                                     </div>
                                                 </div>
                                                 <h4>Booked By: {items.name}</h4>

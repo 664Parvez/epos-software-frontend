@@ -7,11 +7,12 @@
     height: 70px;
     width: 70px;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 15px;
+    border: 2px solid var(--third-color);
 }
 .profile_section img {
-    height: 80px;
-    width: 80px;
+    height: auto;
+    width: 100%;
 }
 .profile_section .order_and_earn {
     background-color: var(--bg-color);

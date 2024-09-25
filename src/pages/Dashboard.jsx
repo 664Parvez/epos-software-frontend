@@ -14,6 +14,7 @@ const Dashboard = () => {
         <>
             <div id="main_section">
                 <h3>Dashboard</h3>
+                <hr />
 
                 <div className='row'>
                     <div className="col-lg-3 col-md-6">

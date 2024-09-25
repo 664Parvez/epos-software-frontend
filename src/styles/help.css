@@ -1,0 +1,21 @@
+.help_first_section h1 {
+    color: var(--fifth-color);
+}
+.first_help_two_container {
+    background-color: var(--second-color);
+    padding: 25px 15px;
+    border-radius: 10px;
+}
+.help_search {
+    background-color: var(--forth-color);
+    padding: 30px 0;
+    border-radius: 10px;
+}
+.features_box {
+    background-color: var(--white-color);
+    padding: 25px 15px;
+    border-radius: 10px;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}

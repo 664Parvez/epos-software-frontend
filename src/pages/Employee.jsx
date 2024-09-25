@@ -52,6 +52,7 @@ const Employee = () => {
     return (
         <div id="main_section">
             <h3>Employee</h3>
+            <hr />
 
             <div className="row justify-content-center">
                 {

@@ -13,6 +13,8 @@ const OpenProfile = () => {
         <>
             <div id="main_section">
                 <h3>Profile</h3>
+                <hr />
+
                 <div className="row mt-3">
                     <div className="col-lg-4 col-md-5">
                         <div className='profile_section'>

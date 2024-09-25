@@ -1,0 +1,41 @@
+#settings_all_options h4 {
+    color: var(--fifth-color);
+}
+.profile_img {
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid var(--third-color);
+}
+.profile_img img {
+    height: auto;
+    width: 100%;
+}
+
+.logo {
+    height: auto;
+    width: 150px;
+}
+
+.color ul {
+    margin-top: 10px;
+}
+.color ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+.color ul li:last-child {
+    margin-right: 0px;
+}
+.color_plat {
+    height: 40px;
+    width: 40px;
+    background-color: var(--first-color);
+    border-radius: 10px;
+}
+.setting_edit_btn .btn {
+    background-color: var(--forth-color);
+    border: none;
+    color: var(--black-color);
+}

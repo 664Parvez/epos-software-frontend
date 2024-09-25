@@ -4,6 +4,7 @@
     position: fixed;
     width: 100%;
     background-color: var(--white-color);
+    z-index: 999;
 }
 #navbar img {
     width: auto;
@@ -56,9 +57,10 @@
     height: 40px;
     width: 40px;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 10px;
+    border: 2px solid var(--third-color);
 }
 #navbar .profile_img img {
-    height: 50px;
-    width: auto;
+    height: auto;
+    width: 100%;
 }

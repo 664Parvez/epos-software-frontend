@@ -48,6 +48,7 @@ const Reservation = () => {
     return (
         <div id="main_section">
             <h3>Reservation</h3>
+            <hr />
 
             <div>
                 <div className="row justify-content-center mt-2">

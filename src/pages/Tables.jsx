@@ -52,6 +52,7 @@ const Tables = () => {
     return (
         <div id="main_section">
             <h3>Tables</h3>
+            <hr />
 
             <div className="row">
                 {

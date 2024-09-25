@@ -241,6 +241,7 @@ const Order = () => {
     return (
         <div id="main_section">
             <h3>Order List</h3>
+            <hr />
 
             <div id='all_menus' className='mt-4'>
                 {

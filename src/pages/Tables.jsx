@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "../styles/tables.css"
 
 import table from "../../public/table.png"
@@ -48,6 +48,10 @@ const Tables = () => {
         },
     ]
 
+    const bookedPosition = tableAvailable.filter((items) => {
+        return items.status === "Booked"
+    })
+
 
     return (
         <div id="main_section">
@@ -55,6 +59,13 @@ const Tables = () => {
             <hr />
 
             <div className="row">
+                <h5>Booked Table - 
+                    
+                    <span> {
+                        bookedPosition.length
+                    }</span>
+                </h5>
+
                 {
                     tableAvailable.map((items) => {
                         return (
@@ -71,7 +82,6 @@ const Tables = () => {
                                                 {
                                                     items.status === "Booked" ? <h6 style={{background: "var(--first-color)"}}>{items.status}</h6> : <h6 style={{background: "var(--black-color)"}}>{items.status}</h6>
                                                 }
-                                                
                                             </div>
                                         </div>
                                     </div>

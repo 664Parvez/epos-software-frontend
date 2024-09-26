@@ -38,7 +38,7 @@ const HelpCenter = () => {
                     <div className="col-lg-3 col-md-3"></div>
                     <div className="col-lg-6 col-md-6">
                         <label htmlFor="">Search the help center category</label>
-                        <input type="text" className='form-control' placeholder='Search here . . .' />
+                        <input type="text" className='form-control form-control-lg' placeholder='Search here . . .' />
                     </div>
                     <div className="col-lg-3 col-md-3"></div>
                 </div>

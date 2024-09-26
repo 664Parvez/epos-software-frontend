@@ -5,7 +5,7 @@ import { NavLink as Link } from "react-router-dom"
 import User from "../../public/user.png"
 
 // Icons
-import { MdOutlineSpaceDashboard, MdOutlineRestaurantMenu, MdOutlineBorderColor, MdOutlineAccountBalanceWallet, MdFastfood, MdOutlineSettings, MdHelp, MdLogout } from "react-icons/md";
+import { MdOutlineSpaceDashboard, MdManageHistory, MdOutlineBorderColor, MdOutlineAccountBalanceWallet, MdFastfood, MdOutlineSettings, MdHelp, MdLogout } from "react-icons/md";
 
 const Sidebar = () => {
     return (
@@ -32,9 +32,9 @@ const Sidebar = () => {
                             <MdOutlineAccountBalanceWallet className='side_menu_icon' /> Accounting
                         </li>
                     </Link>
-                    <Link to="/delivery">
+                    <Link to="/history">
                         <li>
-                            <MdOutlineRestaurantMenu className='side_menu_icon' /> Ongoing Order
+                            <MdManageHistory className='side_menu_icon' /> History
                         </li>
                     </Link>
                 </ul>

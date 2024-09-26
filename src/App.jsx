@@ -20,7 +20,7 @@ import Signup from "./pages/Signup"
 import Signin from "./pages/Signin"
 import Accounting from "./pages/Accounting"
 import Menu from "./pages/Menu"
-import Delivery from "./pages/Delivery"
+import History from "./pages/History"
 import Settings from "./pages/Settings"
 import HelpCenter from "./pages/Help Center"
 import OpenProfile from "./pages/Open Profile"
@@ -41,7 +41,7 @@ function App() {
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/order-list' element={<OrderList />} />
           <Route path='/accounting' element={<Accounting />} />
-          <Route path='/delivery' element={<Delivery />} />
+          <Route path='/history' element={<History />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/signin' element={<Signin />} />
           <Route path='/settings' element={<Settings />} />

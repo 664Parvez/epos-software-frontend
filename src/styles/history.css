@@ -1,0 +1,52 @@
+#all_history {
+    column-count: 4;
+    column-gap: 5;
+    break-inside: avoid;
+}
+
+.menu {
+    display: inline-block;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 0 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.order_list_table>:not(caption)>*>* {
+    background-color: transparent !important;
+    color: var(--white-color) !important;
+    border: none !important;
+}
+
+.delete_icon {
+    font-size: 20px;
+}
+.edit_icon {
+    font-size: 20px;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .menu {
+        flex: 100%;
+        max-width: 100%;
+        display: block;
+    }
+    #all_history {
+        column-count: 1;
+    }
+}
+@media only screen and (min-width: 510px) and (max-width: 800px) {
+    .menu {
+        flex: 50%;
+        max-width: 100%;
+        display: block;
+    }
+    #all_history {
+        column-count: 2;
+    }
+}

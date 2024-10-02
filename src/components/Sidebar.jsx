@@ -27,9 +27,9 @@ const Sidebar = () => {
                             <MdOutlineBorderColor className='side_menu_icon' /> Order List
                         </li>
                     </Link>
-                    <Link to="/accounting">
+                    <Link to="/sales-summary">
                         <li>
-                            <MdOutlineAccountBalanceWallet className='side_menu_icon' /> Accounting
+                            <MdOutlineAccountBalanceWallet className='side_menu_icon' /> Sales Summary
                         </li>
                     </Link>
                     <Link to="/history">

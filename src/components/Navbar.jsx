@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/navbar.css"
-import { NavLink as Link } from 'react-router-dom';
+import { NavLink as Link, useLocation } from 'react-router-dom';
 
 // Icons
 import { FaBell } from "react-icons/fa6";
@@ -10,6 +10,16 @@ import Logo from "/public/logo.png"
 import User from "/public/user.png"
 
 const Navbar = () => {
+
+    // Sidebar Hide from this page (home page)
+
+    const location = useLocation();
+    if (location.pathname === '/') {
+        return null; // Return null to hide the navbar
+    }
+    
+    // Sidebar Hide from this page (home page)
+
     return (
         <>
             <div id='navbar'>

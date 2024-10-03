@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/sidebar.css"
-import { NavLink as Link } from "react-router-dom"
+import { NavLink as Link, useLocation } from "react-router-dom"
 
 import User from "../../public/user.png"
 
@@ -8,6 +8,17 @@ import User from "../../public/user.png"
 import { MdOutlineSpaceDashboard, MdManageHistory, MdOutlineBorderColor, MdOutlineAccountBalanceWallet, MdFastfood, MdOutlineSettings, MdHelp, MdLogout } from "react-icons/md";
 
 const Sidebar = () => {
+
+    // Sidebar Hide from this page (home page)
+
+    const location = useLocation()
+
+    if (location.pathname === "/") {
+        return null // Return null to hide the navbar
+    }
+    
+    // Sidebar Hide from this page (home page)
+
     return (
         <>
             <div id='side_bar_left'>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import './App.css'
 
@@ -16,8 +16,7 @@ import Tables from "./pages/Tables"
 // Sidebar Menu
 import Dashboard from './pages/Dashboard'
 import OrderList from "./pages/Order List"
-import Signup from "./pages/Signup"
-import Signin from "./pages/Signin"
+import Login from "./pages/Login"
 import SalesSummary from "./pages/Sales Summary"
 import Menu from "./pages/Menu"
 import History from "./pages/History"
@@ -34,7 +33,8 @@ function App() {
       <Navbar />
       <Sidebar />
         <Routes>
-          <Route path='/' element={<Menu />} />
+          <Route path='/menu' element={<Menu />} />
+          <Route path='/' element={<Login />} />
           <Route path='/reservation' element={<Reservation />} />
           <Route path='/employee' element={<Employee />} />
           <Route path='/tables' element={<Tables />} />
@@ -42,8 +42,6 @@ function App() {
           <Route path='/order-list' element={<OrderList />} />
           <Route path='/sales-summary' element={<SalesSummary />} />
           <Route path='/history' element={<History />} />
-          <Route path='/signup' element={<Signup />} />
-          <Route path='/signin' element={<Signin />} />
           <Route path='/settings' element={<Settings />} />
           <Route path='/help-center' element={<HelpCenter />} />
           <Route path='/profile' element={<OpenProfile />} />

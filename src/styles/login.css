@@ -1,0 +1,32 @@
+#login_form {
+    margin-top: 150px;
+    overflow-x: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#login_form img {
+    width: auto;
+    height: 40px;
+    margin-bottom: 30px;
+}
+#login_form input {
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 50px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+#login_form .btn {
+    background-color: var(--second-color);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #login_form {
+        margin-top: 100px;
+    }
+}
+@media only screen and (min-width: 550px) and (max-width: 800px) {
+    #login_form {
+        margin-top: 80px;
+    }
+}

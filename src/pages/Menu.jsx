@@ -26,7 +26,7 @@ import Soup from "../../public/image/menu/soup.png"
 const orderingRunning = [
     {
         "id": "#466",
-        "progress": "Ready to Serve",
+        "progress": "Preparing",
         "table": "E",
         "items": 8
     },
@@ -38,13 +38,13 @@ const orderingRunning = [
     },
     {
         "id": "#720",
-        "progress": "Ready to Serve",
+        "progress": "Preparing",
         "table": "C",
         "items": 4
     },
     {
         "id": "#942",
-        "progress": "Ready to Serve",
+        "progress": "Preparing",
         "table": "D",
         "items": 2
     },
@@ -62,7 +62,7 @@ const orderingRunning = [
     },
     {
         "id": "#979",
-        "progress": "Ready to Serve",
+        "progress": "Preparing",
         "table": "G",
         "items": 7
     },
@@ -212,7 +212,6 @@ const Menu = () => {
                     modules={[Autoplay]}
                     className="categorySwiper"
                 >
-
                     {
                         orderingRunning.map((items, index) => {
                             return (

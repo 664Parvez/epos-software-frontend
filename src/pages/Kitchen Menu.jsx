@@ -1,12 +1,28 @@
 import React from 'react'
-import "../styles/history.css"
-
-// Icon
-import { MdDelete } from "react-icons/md";
-import { CiEdit } from "react-icons/ci";
-
+import "../styles/kitchen.css"
 
 const menus = [
+    {
+        id: 345,
+        table: 1,
+        menu: [
+            {
+                "qt": 1,
+                "food": "Chicken Tikka",
+                "price": 14.34
+            },
+            {
+                "qt": 1,
+                "food": "Fried Rice",
+                "price": 14.34
+            },
+            {
+                "qt": 3,
+                "food": "Green Salad",
+                "price": 14.65
+            }
+        ]
+    },
     {
         id: 355,
         table: 2,
@@ -213,31 +229,16 @@ const menus = [
             },
         ]
     },
-    {
-        id: 885,
-        table: 5,
-        menu: [
-            {
-                "qt": 1,
-                "food": "Chicken Tikka",
-                "price": 14.34
-            },
-            {
-                "qt": 1,
-                "food": "Fried Rice",
-                "price": 14.34
-            },
-        ]
-    },
 ]
 
-const Delivery = () => {
+const KitchenMenu = () => {
     return (
-        <div id="main_section">
-            <h3>Order History</h3>
-            <hr />
+        <>
+            <div id="main_section">
+                <h3>Kitchen Menu</h3>
+                <hr />
 
-            <div id='all_history' className='mt-4'>
+                <div id='all_kitchen' className='mt-4'>
                 {
                     menus.map((items) => {
                         return (
@@ -252,7 +253,7 @@ const Delivery = () => {
                                 </div>
                                 <hr />
                                 <div className='table-responsive'>
-                                    <table className='table history_list_table'>
+                                    <table className='table order_list_table'>
                                         <thead>
                                             <tr>
                                                 <th>QT</th>
@@ -274,20 +275,39 @@ const Delivery = () => {
                                             }
                                         </tbody>
                                     </table>
+                                    <div className='text-end'>
+                                        <button className='btn'>Completed</button>
+                                    </div>
                                 </div>
                             </div>
                         )
                     })
                 }
-            </div>
 
-            <hr />
 
-            <div className='text-end mb-3'>
-                <button className='btn history_btn'>Reset History</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header py-2">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Menu Edit</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer py-1">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
-export default Delivery
+export default KitchenMenu

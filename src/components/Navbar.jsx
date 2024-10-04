@@ -44,7 +44,7 @@ const Navbar = () => {
                                 <Link to="/tables">Tables</Link>
                             </li>
                             <li id='navbar_menu_item'>
-                                <Link to="/">Menu</Link>
+                                <Link to="/menu">Menu</Link>
                             </li>
                         </ul>
                     </div>

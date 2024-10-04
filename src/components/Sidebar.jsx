@@ -6,6 +6,7 @@ import User from "../../public/user.png"
 
 // Icons
 import { MdOutlineSpaceDashboard, MdManageHistory, MdOutlineBorderColor, MdOutlineAccountBalanceWallet, MdFastfood, MdOutlineSettings, MdHelp, MdLogout } from "react-icons/md";
+import { FaKitchenSet } from "react-icons/fa6";
 
 const Sidebar = () => {
 
@@ -28,7 +29,7 @@ const Sidebar = () => {
                             <MdOutlineSpaceDashboard className='side_menu_icon' /> Dashboard
                         </li>
                     </Link>
-                    <Link to="/">
+                    <Link to="/menu">
                         <li>
                             <MdFastfood className='side_menu_icon' /> Menu
                         </li>
@@ -46,6 +47,11 @@ const Sidebar = () => {
                     <Link to="/history">
                         <li>
                             <MdManageHistory className='side_menu_icon' /> History
+                        </li>
+                    </Link>
+                    <Link to="/kitchen-menu">
+                        <li>
+                            <FaKitchenSet className='side_menu_icon' /> Kitchen Menus
                         </li>
                     </Link>
                 </ul>

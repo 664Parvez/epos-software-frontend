@@ -23,6 +23,7 @@ import History from "./pages/History"
 import Settings from "./pages/Settings"
 import HelpCenter from "./pages/Help Center"
 import OpenProfile from "./pages/Open Profile"
+import KitchenMenu from './pages/Kitchen Menu'
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/order-list' element={<OrderList />} />
           <Route path='/sales-summary' element={<SalesSummary />} />
+          <Route path='/kitchen-menu' element={<KitchenMenu />} />
           <Route path='/history' element={<History />} />
           <Route path='/settings' element={<Settings />} />
           <Route path='/help-center' element={<HelpCenter />} />

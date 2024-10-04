@@ -18,6 +18,9 @@ import "../styles/menu.css"
 
 // image
 import Bigburger from "../../public/image/menu/big-burger.webp"
+import Pizza from "../../public/image/menu/pizza.png"
+import Pasta from "../../public/image/menu/pasta.webp"
+import Soup from "../../public/image/menu/soup.png"
 
 
 const orderingRunning = [
@@ -117,7 +120,56 @@ const manus = [
         "category": "burger",
         "name": "Big Burger",
         "price": 12.54
-    }
+    },
+    {
+        "id": 1482,
+        "img": Pizza,
+        "category": "pizza",
+        "name": "8' Pizza",
+        "price": 10.99
+    },
+    {
+        "id": 1170,
+        "img": Soup,
+        "category": "soup",
+        "name": "Soup",
+        "price": 15.74
+    },
+    {
+        "id": 1904,
+        "img": Pasta,
+        "category": "pasta",
+        "name": "Pasta",
+        "price": 17.78
+    },
+    {
+        "id": 1170,
+        "img": Soup,
+        "category": "soup",
+        "name": "Soup",
+        "price": 15.74
+    },
+    {
+        "id": 1904,
+        "img": Pasta,
+        "category": "pasta",
+        "name": "Pasta",
+        "price": 17.78
+    },
+    {
+        "id": 1482,
+        "img": Pizza,
+        "category": "pizza",
+        "name": "16' Pizza",
+        "price": 10.99
+    },
+    {
+        "id": 1532,
+        "img": Bigburger,
+        "category": "burger",
+        "name": "Big Burger",
+        "price": 12.54
+    },
 ]
 
 const Menu = () => {

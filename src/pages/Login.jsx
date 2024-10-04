@@ -83,6 +83,7 @@ const Signin = () => {
                                 <div>
                                 <input type="text" className='form-control form-control-lg' onChange={(e) => {
                                     setForthPassword(e.target.value)
+                                    firstPassRef.current.focus()
                                 }} maxLength={1} ref={forthPassRef} autoFocus={true} showSoftInputOnFocus={true} />
                                 </div>
                             </div>

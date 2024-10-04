@@ -25,7 +25,7 @@ const Navbar = () => {
             <div id='navbar'>
                 <div className='d-flex justify-content-between align-items-center'>
                     <div>
-                        <Link to="/">
+                        <Link to="/menu">
                             <img src={Logo} alt="" />
                         </Link>
                     </div>

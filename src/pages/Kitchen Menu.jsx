@@ -275,6 +275,9 @@ const KitchenMenu = () => {
                                             }
                                         </tbody>
                                     </table>
+
+                                    <hr />
+                                    
                                     <div className='text-end'>
                                         <button className='btn'>Completed</button>
                                     </div>

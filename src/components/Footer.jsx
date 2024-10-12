@@ -1,8 +1,16 @@
 import React from 'react'
-import {NavLink as Link} from "react-router-dom"
+import {NavLink as Link, useLocation} from "react-router-dom"
 import "../styles/footer.css"
 
 const Footer = () => {
+
+        // Sidebar Hide from this page (home page)
+        const location = useLocation()
+
+        if (location.pathname === "/") {
+            return null // Return null to hide the navbar
+        }
+        // Sidebar Hide from this page (home page)
 
     const yearDate = new Date().getFullYear()
 

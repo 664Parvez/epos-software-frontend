@@ -56,3 +56,14 @@ a {
     padding: 10px 20px;
     padding-top: 80px;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #main-section {
+        margin-left: calc(100% - 90%);
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 1080px) {
+    #main-section {
+        margin-left: calc(100% - 90%);
+    }
+}

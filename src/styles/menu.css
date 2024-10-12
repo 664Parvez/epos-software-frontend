@@ -62,3 +62,18 @@
     width: auto;
     height: 60px;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #menu_categoties .category_div .d-flex {
+        display: block !important;
+    }
+    #menus .row {
+        --bs-gutter-x: 0.5rem;
+    }
+    #menus .col-sm {
+        width: 50% !important;
+    }
+    #menus .our_menus_div .d-flex {
+        display: block !important;
+    }
+}

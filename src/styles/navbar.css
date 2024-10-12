@@ -75,9 +75,6 @@
     .mobile_hide_profile {
         display: none;
     }
-    .notification_icon {
-        display: none;
-    }
 }
 @media only screen and (min-width: 501px) and (max-width: 1080px) {
     #navbar #nav_logo {

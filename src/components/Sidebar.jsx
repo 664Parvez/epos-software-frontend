@@ -24,57 +24,89 @@ const Sidebar = () => {
     return (
         <>
             <div id='side_bar_left'>
-                <ul>
-                    <Link to="/dashboard">
-                        <li>
-                            <MdOutlineSpaceDashboard className='side_menu_icon' /> Dashboard
-                        </li>
-                    </Link>
-                    <Link to="/menu">
-                        <li>
-                            <MdFastfood className='side_menu_icon' /> Menu
-                        </li>
-                    </Link>
-                    <Link to="/order-list">
-                        <li>
-                            <MdOutlineBorderColor className='side_menu_icon' /> Order List
-                        </li>
-                    </Link>
-                    <Link to="/history">
-                        <li>
-                            <MdManageHistory className='side_menu_icon' /> History
-                        </li>
-                    </Link>
-                    <Link to="/kitchen-menu">
-                        <li>
-                            <FaKitchenSet className='side_menu_icon' /> Kitchen Menus
-                        </li>
-                    </Link>
-                </ul>
+                <div id="sidebar_pc">
+                    <ul>
+                        <Link to="/dashboard">
+                            <li>
+                                <MdOutlineSpaceDashboard className='side_menu_icon' /> Dashboard
+                            </li>
+                        </Link>
+                        <Link to="/menu">
+                            <li>
+                                <MdFastfood className='side_menu_icon' /> Menu
+                            </li>
+                        </Link>
+                        <Link to="/order-list">
+                            <li>
+                                <MdOutlineBorderColor className='side_menu_icon' /> Order List
+                            </li>
+                        </Link>
+                        <Link to="/history">
+                            <li>
+                                <MdManageHistory className='side_menu_icon' /> History
+                            </li>
+                        </Link>
+                        <Link to="/kitchen-menu">
+                            <li>
+                                <FaKitchenSet className='side_menu_icon' /> Kitchen Menus
+                            </li>
+                        </Link>
+                    </ul>
 
-                <hr />
+                    <hr />
 
-                <ul id='bottom_menu'>
-                    <Link to="/settings"><li><MdOutlineSettings className='side_menu_icon' /> Settings</li></Link>  
-                    <Link to="/help-center"><li><MdHelp className='side_menu_icon' /> Help Center</li></Link>
-                    <Link to="/logout"><li><MdLogout className='side_menu_icon' /> Logout</li></Link>
-                </ul>
+                    <ul id='bottom_menu'>
+                        <Link to="/settings"><li><MdOutlineSettings className='side_menu_icon' /> Settings</li></Link>  
+                        <Link to="/help-center"><li><MdHelp className='side_menu_icon' /> Help Center</li></Link>
+                        <Link to="/logout"><li><MdLogout className='side_menu_icon' /> Logout</li></Link>
+                    </ul>
 
-                <hr />
+                    <hr />
 
-                <div id="user_div">
-                    <div className='user_inner'>
-                        <div className="user_inner_image mx-auto">
-                            <Link to="/profile">
-                                <img src={User} alt="" />
-                            </Link>
-                        </div>
-                        <h5 className='text-center mb-0'>Parvez Rabbi</h5>
-                        <p className='text-center'>Designation</p>
-                        <div className="text-center">
-                            <Link to="/profile" className="btn">Open Profile</Link>
+                    <div id="user_div">
+                        <div className='user_inner'>
+                            <div className="user_inner_image mx-auto">
+                                <Link to="/profile">
+                                    <img src={User} alt="" />
+                                </Link>
+                            </div>
+                            <h5 className='text-center mb-0'>Parvez Rabbi</h5>
+                            <p className='text-center'>Designation</p>
+                            <div className="text-center">
+                                <Link to="/profile" className="btn">Open Profile</Link>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <div id="sidebar_mobile">
+                    <ul>
+                        <Link to="/dashboard">
+                            <li>
+                                <MdOutlineSpaceDashboard className='side_menu_icon' />
+                            </li>
+                        </Link>
+                        <Link to="/menu">
+                            <li>
+                                <MdFastfood className='side_menu_icon' />
+                            </li>
+                        </Link>
+                        <Link to="/order-list">
+                            <li>
+                                <MdOutlineBorderColor className='side_menu_icon' />
+                            </li>
+                        </Link>
+                        <Link to="/history">
+                            <li>
+                                <MdManageHistory className='side_menu_icon' />
+                            </li>
+                        </Link>
+                        <Link to="/kitchen-menu">
+                            <li>
+                                <FaKitchenSet className='side_menu_icon' />
+                            </li>
+                        </Link>
+                    </ul>
                 </div>
             </div>
         </>

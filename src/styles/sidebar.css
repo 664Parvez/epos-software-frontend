@@ -70,3 +70,46 @@
     background-color: var(--forth-color);
     font-size: 15px;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #side_bar_left {
+        width: max(100% - 90%);
+    }
+    #sidebar_pc {
+        display: none;
+    }
+
+    #sidebar_mobile {
+        margin-left: -18px;
+    }
+    #side_bar_left ul a li {
+        font-size: 18px;
+    }
+    #side_bar_left ul li:hover {
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1080px) {
+    #side_bar_left {
+        width: max(100% - 90%);
+    }
+    #sidebar_pc {
+        display: none;
+    }
+    #sidebar_mobile {
+        margin-left: 2px;
+    }
+    #side_bar_left ul a li {
+        font-size: 20px;
+    }
+    #side_bar_left ul li:hover {
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 1081px) {
+    #sidebar_mobile {
+        display: none;
+    }
+}

@@ -195,12 +195,16 @@ const Menu = () => {
                         reverseDirection: true
                     }}
                     breakpoints={{
+                        300: {
+                            slidesPerView: 2,
+                            spaceBetween: 5,
+                        },
                         640: {
                             slidesPerView: 2.2,
                             spaceBetween: 10,
                         },
                         768: {
-                            slidesPerView: 4.3,
+                            slidesPerView: 3.3,
                             spaceBetween: 10,
                         },
                         1024: {
@@ -260,12 +264,16 @@ const Menu = () => {
                         disableOnInteraction: false,
                     }}
                     breakpoints={{
+                        300: {
+                            slidesPerView: 2,
+                            spaceBetween: 5,
+                        },
                         640: {
                             slidesPerView: 2.2,
                             spaceBetween: 10,
                         },
                         768: {
-                            slidesPerView: 4.3,
+                            slidesPerView: 3.3,
                             spaceBetween: 10,
                         },
                         1024: {
@@ -322,7 +330,7 @@ const Menu = () => {
                     {
                         manus.map((items) => {
                             return (
-                                <div className="col-lg-3 col-md-6 mt-3" key={items.id}>
+                                <div className="col-lg-3 col-md-6 col-sm mt-3" key={items.id}>
                                         <div className='our_menus_div'>
                                             <img src={items.img} alt="" />
                                             <h5>{items.name}</h5>

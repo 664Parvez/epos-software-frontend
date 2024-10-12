@@ -1,6 +1,7 @@
 import React from 'react'
+import "../styles/main-section.css"
 
-const mainsection = ({children}) => {
+const Mainsection = ({children}) => {
     return (
         <div id='main-section'>
             {
@@ -10,4 +11,4 @@ const mainsection = ({children}) => {
     )
 }
 
-export default mainsection
+export default Mainsection

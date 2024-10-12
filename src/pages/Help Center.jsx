@@ -1,10 +1,11 @@
 import React from 'react'
 import {NavLink as Link} from "react-router-dom"
 import "../styles/help.css"
+import Mainsection from "../components/main-section"
 
 const HelpCenter = () => {
     return (
-        <div id="main_section">
+        <Mainsection>
             <h3>Help Center</h3>
             <hr />
 
@@ -159,7 +160,7 @@ const HelpCenter = () => {
                     <div className="col-lg-2 col-md-2"></div>
                 </div>
             </div>
-        </div>
+        </Mainsection>
     )
 }
 

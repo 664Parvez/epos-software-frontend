@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {NavLink as Link} from "react-router-dom"
+import Mainsection from "../components/main-section"
 
 import { FaArrowRight } from "react-icons/fa";
 
@@ -177,7 +178,7 @@ const Menu = () => {
     const [count, setCount] = useState(0)
 
     return (
-        <div id="main_section">
+        <Mainsection>
             <h3>Menu</h3>
             <hr />
 
@@ -352,7 +353,7 @@ const Menu = () => {
                     }
                 </div>
             </div>
-        </div>
+        </Mainsection>
     )
 }
 

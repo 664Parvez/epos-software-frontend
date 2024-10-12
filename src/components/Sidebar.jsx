@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "../styles/sidebar.css"
 import { NavLink as Link, useLocation } from "react-router-dom"
 
@@ -7,17 +7,18 @@ import User from "../../public/user.png"
 // Icons
 import { MdOutlineSpaceDashboard, MdManageHistory, MdOutlineBorderColor, MdOutlineAccountBalanceWallet, MdFastfood, MdOutlineSettings, MdHelp, MdLogout } from "react-icons/md";
 import { FaKitchenSet } from "react-icons/fa6";
+import { TbSquareRoundedArrowRightFilled } from "react-icons/tb";
 
 const Sidebar = () => {
 
-    // Sidebar Hide from this page (home page)
+    const [sidebarHide, setSidebarHide] = useState(true)
 
+    // Sidebar Hide from this page (home page)
     const location = useLocation()
 
     if (location.pathname === "/") {
         return null // Return null to hide the navbar
     }
-    
     // Sidebar Hide from this page (home page)
 
     return (
@@ -37,11 +38,6 @@ const Sidebar = () => {
                     <Link to="/order-list">
                         <li>
                             <MdOutlineBorderColor className='side_menu_icon' /> Order List
-                        </li>
-                    </Link>
-                    <Link to="/sales-summary">
-                        <li>
-                            <MdOutlineAccountBalanceWallet className='side_menu_icon' /> Sales Summary
                         </li>
                     </Link>
                     <Link to="/history">
@@ -69,7 +65,9 @@ const Sidebar = () => {
                 <div id="user_div">
                     <div className='user_inner'>
                         <div className="user_inner_image mx-auto">
-                            <img src={User} alt="" />
+                            <Link to="/profile">
+                                <img src={User} alt="" />
+                            </Link>
                         </div>
                         <h5 className='text-center mb-0'>Parvez Rabbi</h5>
                         <p className='text-center'>Designation</p>

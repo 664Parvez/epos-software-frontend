@@ -1,13 +1,14 @@
 import React from 'react'
 import { NavLink as Link } from "react-router-dom"
 import "../styles/settings.css"
+import Mainsection from "../components/main-section"
 
 import profile from "../../public/user.png"
 import Logo from "../../public/logo.png"
 
 const Settings = () => {
     return (
-        <div id="main_section">
+        <Mainsection>
             <h3>Settings</h3>
             <hr />
 
@@ -151,7 +152,7 @@ const Settings = () => {
                 </div>
 
             </div>
-        </div>
+        </Mainsection>
     )
 }
 

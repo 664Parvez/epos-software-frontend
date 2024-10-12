@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import "../styles/tables.css"
+import Mainsection from "../components/main-section"
 
 import table from "../../public/table.png"
 
@@ -54,7 +55,7 @@ const Tables = () => {
 
 
     return (
-        <div id="main_section">
+        <Mainsection>
             <h3>Tables</h3>
             <hr />
 
@@ -91,7 +92,7 @@ const Tables = () => {
                     })
                 }
             </div>
-        </div>
+        </Mainsection>
     )
 }
 

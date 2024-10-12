@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/reservation.css"
+import Mainsection from "../components/main-section"
 
 const Reservation = () => {
 
@@ -47,7 +48,7 @@ const Reservation = () => {
 
 
     return (
-        <div id="main_section">
+        <Mainsection>
             <h3>Reservation</h3>
             <hr />
 
@@ -148,7 +149,7 @@ const Reservation = () => {
                     }
                 </div>
             </div>
-        </div>
+        </Mainsection>
     )
 }
 

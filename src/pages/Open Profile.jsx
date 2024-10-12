@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/profile.css"
+import Mainsection from "../components/main-section"
 
 import Profile from "../../public/user.png"
 import { NavLink as Link } from "react-router-dom"
@@ -11,7 +12,7 @@ import { RiMoneyDollarCircleLine, RiLogoutCircleRLine } from "react-icons/ri";
 const OpenProfile = () => {
     return (
         <>
-            <div id="main_section">
+            <Mainsection>
                 <h3>Profile</h3>
                 <hr />
 
@@ -90,7 +91,7 @@ const OpenProfile = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Mainsection>
         </>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/kitchen.css"
+import Mainsection from "../components/main-section"
 
 const menus = [
     {
@@ -234,7 +235,7 @@ const menus = [
 const KitchenMenu = () => {
     return (
         <>
-            <div id="main_section">
+            <Mainsection>
                 <h3>Kitchen Menu</h3>
                 <hr />
 
@@ -308,7 +309,7 @@ const KitchenMenu = () => {
 
 
                 </div>
-            </div>
+            </Mainsection>
         </>
     )
 }

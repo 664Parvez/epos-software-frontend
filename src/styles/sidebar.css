@@ -1,6 +1,6 @@
 #side_bar_left {
-    width: max(100% - 85%);
     height: 100%;
+    width: max(100% - 85%);
     border-right: 1px solid var(--border-color);
     position: fixed;
     padding: 10px 20px;
@@ -8,7 +8,20 @@
     background-color: var(--white-color);
     top: 60px;
     padding-bottom: 80px;
+    z-index: 800;
 }
+
+#sidebar_toggle_btn {
+    position: absolute;
+    top: 100px;
+    left: 14%;
+    font-size: 30px;
+    color: var(--first-color);
+    cursor: pointer;
+    rotate: 180deg;
+    z-index: 1000;
+}
+
 #side_bar_left ul li {
     padding-top: 7px;
     padding-bottom: 7px;

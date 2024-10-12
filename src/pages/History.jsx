@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/history.css"
+import Mainsection from '../components/main-section';
 
 // Icon
 import { MdDelete } from "react-icons/md";
@@ -233,7 +234,7 @@ const menus = [
 
 const Delivery = () => {
     return (
-        <div id="main_section">
+        <Mainsection>
             <h3>Order History</h3>
             <hr />
 
@@ -286,7 +287,7 @@ const Delivery = () => {
             <div className='text-end mb-3'>
                 <button className='btn history_btn'>Reset History</button>
             </div>
-        </div>
+        </Mainsection>
     )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/orderlist.css"
+import Mainsection from "../components/main-section"
 
 // Icon
 import { MdDelete } from "react-icons/md";
@@ -239,7 +240,7 @@ const menus = [
 const Order = () => {
 
     return (
-        <div id="main_section">
+        <Mainsection>
             <h3>Order List</h3>
             <hr />
 
@@ -318,7 +319,7 @@ const Order = () => {
 
 
             </div>
-        </div>
+        </Mainsection>
     )
 }
 

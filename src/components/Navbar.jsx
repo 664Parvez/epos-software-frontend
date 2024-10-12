@@ -24,7 +24,7 @@ const Navbar = () => {
         <>
             <div id='navbar'>
                 <div className='d-flex justify-content-between align-items-center'>
-                    <div>
+                    <div id='nav_logo'>
                         <Link to="/menu">
                             <img src={Logo} alt="" />
                         </Link>
@@ -34,16 +34,16 @@ const Navbar = () => {
                             <li>
                                 <input type="text" class="form-control" placeholder='Search Menu' />
                             </li>
-                            <li>
+                            <li className='nav_items'>
                                 <Link to="/reservation">Reservation</Link>
                             </li>
-                            <li>
+                            <li className='nav_items employees_menu'>
                                 <Link to="/employee">Employees</Link>
                             </li>
-                            <li>
+                            <li className='nav_items tables_menu'>
                                 <Link to="/tables">Tables</Link>
                             </li>
-                            <li id='navbar_menu_item'>
+                            <li id='navbar_menu_item' className='nav_items'>
                                 <Link to="/menu">Menu</Link>
                             </li>
                         </ul>
@@ -63,12 +63,12 @@ const Navbar = () => {
                                     </select>
                                 </form>
                             </div>
-                            <div className='profile_img mx-2 shadow'>
+                            <div className='profile_img mx-2 shadow mobile_hide_profile'>
                                 <Link to="/profile">
                                     <img src={User} alt="" />
                                 </Link>
                             </div>
-                            <div className='mx-2'>
+                            <div className='mx-2 notification_icon'>
                                 <Link to="/notification"><FaBell /></Link>
                             </div>
                         </div>

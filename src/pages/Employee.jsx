@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink as Link } from "react-router-dom"
 import "../styles/employee.css"
+import Mainsection from "../components/main-section"
 
 const Employee = () => {
 
@@ -50,7 +51,7 @@ const Employee = () => {
     ]
 
     return (
-        <div id="main_section">
+        <Mainsection>
             <h3>Employee</h3>
             <hr />
 
@@ -92,7 +93,7 @@ const Employee = () => {
                     })
                 }
             </div>
-        </div>
+        </Mainsection>
     )
 }
 

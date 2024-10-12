@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/dashboard.css"
+import Mainsection from "../components/main-section"
 
 // Chart and Graph
 import {Chart as ChartJS} from "chart.js/auto"
@@ -12,7 +13,7 @@ import { IoBagCheckOutline } from "react-icons/io5";
 const Dashboard = () => {
     return (
         <>
-            <div id="main_section">
+            <Mainsection>
                 <h3>Dashboard</h3>
                 <hr />
 
@@ -98,7 +99,7 @@ const Dashboard = () => {
                     </div>
                 </div>
 
-                <div className="my-4">
+                <div className="mt-4">
                     <div className="row">
                         <div className="col-lg-6 col-md-6">
                             <div className='dashboard_third'>
@@ -180,7 +181,7 @@ const Dashboard = () => {
                     </div>
                 </div>
 
-            </div>
+            </Mainsection>
         </>
     )
 }

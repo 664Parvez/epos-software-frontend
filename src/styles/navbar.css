@@ -64,3 +64,32 @@
     height: auto;
     width: 100%;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #navbar #nav_logo {
+        display: none;
+    }
+    #navbar .nav_items {
+        display: none;
+    }
+    .mobile_hide_profile {
+        display: none;
+    }
+    .notification_icon {
+        display: none;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 1080px) {
+    #navbar #nav_logo {
+        display: none;
+    }
+    #navbar .mobile_hide_profile {
+        display: none;
+    }
+    #navbar .employees_menu {
+        display: none;
+    }
+    #navbar .tables_menu {
+        display: none;
+    }
+}

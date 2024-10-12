@@ -15,10 +15,10 @@
     width: 100%;
 }
 
-.btn {
+#all_kitchen .btn {
     background-color: var(--second-color);
 }
-.btn:hover {
+#all_kitchen .btn:hover {
     background-color: var(--forth-color);
     color: var(--black-color);
 }

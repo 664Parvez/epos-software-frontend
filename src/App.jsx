@@ -5,6 +5,7 @@ import './App.css'
 // Components
 import Navbar from "./components/Navbar"
 import Sidebar from "./components/Sidebar"
+import Footer from './components/Footer'
 
 // Pages
 
@@ -17,7 +18,6 @@ import Tables from "./pages/Tables"
 import Dashboard from './pages/Dashboard'
 import OrderList from "./pages/Order List"
 import Login from "./pages/Login"
-import SalesSummary from "./pages/Sales Summary"
 import Menu from "./pages/Menu"
 import History from "./pages/History"
 import Settings from "./pages/Settings"
@@ -41,13 +41,13 @@ function App() {
           <Route path='/tables' element={<Tables />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/order-list' element={<OrderList />} />
-          <Route path='/sales-summary' element={<SalesSummary />} />
           <Route path='/kitchen-menu' element={<KitchenMenu />} />
           <Route path='/history' element={<History />} />
           <Route path='/settings' element={<Settings />} />
           <Route path='/help-center' element={<HelpCenter />} />
           <Route path='/profile' element={<OpenProfile />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )

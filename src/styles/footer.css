@@ -1,0 +1,13 @@
+#footer {
+    background-color: var(--third-color);
+    margin-left: calc(100% - 85%);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#footer p {
+    color: var(--white-color);
+}
+#footer p a {
+    color: var(--white-color);
+}

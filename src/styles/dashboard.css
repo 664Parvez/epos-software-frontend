@@ -25,9 +25,14 @@
     padding: 20px;
 }
 .today_sale canvas {
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 400px;
     margin: auto;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .today_sale canvas {
+        width: 100%;
+    }
 }
 
 /* Third */
@@ -35,9 +40,19 @@
     background-color: var(--white-color);
     border-radius: 10px;
     padding: 20px;
-    height: 330px;
 }
 .dashboard_third .third_table_div{
+    height: 250px;
+    overflow-y: scroll;
+}
+
+/* Fifth */
+.staff_activ {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+.fifth_table_div {
     height: 250px;
     overflow-y: scroll;
 }

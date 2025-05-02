@@ -19,6 +19,7 @@ import Dashboard from './pages/Dashboard'
 import OrderList from "./pages/Order List"
 import Login from "./pages/Login"
 import Menu from "./pages/Menu"
+import AdminMenu from "./pages/admin-menu"
 import History from "./pages/History"
 import Settings from "./pages/Settings"
 import HelpCenter from "./pages/Help Center"
@@ -35,6 +36,7 @@ function App() {
       <Sidebar />
         <Routes>
           <Route path='/menu' element={<Menu />} />
+          <Route path='/admin-menu' element={<AdminMenu />} />
           <Route path='/' element={<Login />} />
           <Route path='/reservation' element={<Reservation />} />
           <Route path='/employee' element={<Employee />} />

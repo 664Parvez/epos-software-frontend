@@ -31,9 +31,6 @@ const Navbar = () => {
                     </div>
                     <div>
                         <ul>
-                            <li>
-                                <input type="text" class="form-control" placeholder='Search Menu' />
-                            </li>
                             <li className='nav_items'>
                                 <Link to="/reservation">Reservation</Link>
                             </li>

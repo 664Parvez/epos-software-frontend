@@ -329,22 +329,7 @@ const Menu = () => {
                         <h5>Discover Our Menus</h5>
                     </div>
                     <div>
-                        <div className="d-flex justify-content-between align-items-center gap-4">
-                            <div>
-                                <input type="text" class="form-control" placeholder='Search Food' />
-                            </div>
-                            <div>
-                                <select name="" id="category_filter_form" className='form-control'>
-                                    <option value="">Pasta</option>
-                                    <option value="">Sushi</option>
-                                    <option value="">Main</option>
-                                    <option value="">Deserts</option>
-                                    <option value="">Burger</option>
-                                    <option value="">Breakfast</option>
-                                    <option value="">Soup</option>
-                                </select>
-                            </div>
-                        </div>
+                        <input type="text" class="form-control" placeholder='Search Food' />
                     </div>
                 </div>
 

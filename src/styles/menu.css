@@ -62,6 +62,9 @@
     width: auto;
     height: 60px;
 }
+#category_filter_form {
+    -webkit-appearance: auto !important;
+}
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     #menu_categoties .category_div .d-flex {

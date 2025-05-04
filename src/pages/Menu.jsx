@@ -183,7 +183,20 @@ const Menu = () => {
             <hr />
 
             <div id="order_running">
-                <h5>Order Running</h5>
+                <div className="d-flex justify-content-between align-items-center">
+                    <h5>Order Running</h5>
+
+                    <div className="text-end mb-3">
+                        <form action="">
+                            <select name="" className='form-select' id="">
+                                <option value="">-- Select Order Status --</option>
+                                <option value="">All</option>
+                                <option value="">Completed</option>
+                                <option value="">Prparing</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
 
                 <Swiper
                     slidesPerView="auto"

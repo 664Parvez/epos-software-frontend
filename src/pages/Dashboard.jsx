@@ -7,7 +7,7 @@ import {Chart as ChartJS} from "chart.js/auto"
 import { Bar, Line, Chart, Doughnut } from "react-chartjs-2"
 
 // Icons
-import { FaCircleDollarToSlot, FaNewspaper, FaHandHoldingDollar } from "react-icons/fa6";
+import { FaCircleDollarToSlot, FaNewspaper, FaUsers } from "react-icons/fa6";
 import { IoBagCheckOutline } from "react-icons/io5";
 
 const Dashboard = () => {
@@ -21,29 +21,29 @@ const Dashboard = () => {
                     <div className="col-lg-3 col-md-6">
                         <div className='dashboard_first_list mt-3'>
                             <FaCircleDollarToSlot className='dashboard_first_icon' />
-                            <p>Revenue</p>
+                            <p>Total Revenue</p>
                             <h4 className="mb-0">$6000.74</h4>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <div className='dashboard_first_list mt-3'>
                             <FaNewspaper className='dashboard_first_icon' />
-                            <p>Paid Orders</p>
+                            <p>Total Orders</p>
                             <h4 className="mb-0">198</h4>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <div className='dashboard_first_list mt-3'>
-                            <FaHandHoldingDollar className='dashboard_first_icon' />
-                            <p>Tip Amount</p>
-                            <h4 className="mb-0">$325.65</h4>
+                            <FaUsers className='dashboard_first_icon' />
+                            <p>Total Customers</p>
+                            <h4 className="mb-0">5874</h4>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <div className='dashboard_first_list mt-3'>
                             <IoBagCheckOutline className='dashboard_first_icon' />
-                            <p>Dishes Sold</p>
-                            <h4 className="mb-0">227</h4>
+                            <p>Total Dishes</p>
+                            <h4 className="mb-0">4027</h4>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const Dashboard = () => {
                         </div>
                         <div className="col-lg-5 col-md-6 dashboard_data_first_col mt-3">
                             <div className="today_sale dashboard_second">
-                                <h5 className='mb-5'>Payment Summaries</h5>
+                                <h5 className='mb-5'>Payment Summary</h5>
                                 <Doughnut 
                                     data={{
                                         labels: ["Food", "Drinks", "Others"],
@@ -151,6 +151,24 @@ const Dashboard = () => {
                                                 <td>$27</td>
                                                 <td>1000</td>
                                             </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>Vegetable Salad</td>
+                                                <td>$27</td>
+                                                <td>1000</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>Vegetable Salad</td>
+                                                <td>$27</td>
+                                                <td>1000</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>Vegetable Salad</td>
+                                                <td>$27</td>
+                                                <td>1000</td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -158,7 +176,7 @@ const Dashboard = () => {
                         </div>
                         <div className="col-lg-6 col-md-6 mt-3">
                             <div className='dashboard_third'>
-                                <h5 className='mb-5'>Revenue</h5>
+                                <h5 className='mb-5'>Revenue Summary</h5>
                                 <Line
                                     data={{
                                         labels: ["8:00am", "9:00am", "10:00am", "12:00pm"],
@@ -177,17 +195,6 @@ const Dashboard = () => {
                                     }}
                                 />
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="mt-4">
-                    <div className="row">
-                        <div className="col-lg-6 col-md-6 mt-3">
-                            
-                        </div>
-                        <div className="col-lg-6 col-md-6 mt-3">
-                            
                         </div>
                     </div>
                 </div>

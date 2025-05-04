@@ -25,6 +25,8 @@ import Settings from "./pages/Settings"
 import HelpCenter from "./pages/Help Center"
 import OpenProfile from "./pages/Open Profile"
 import KitchenMenu from './pages/Kitchen Menu'
+import TableReservationForm from "./pages/Table Reservation Form"
+import OurPaymentOption from "./pages/our-payment-option"
 
 
 function App() {
@@ -48,6 +50,8 @@ function App() {
           <Route path='/settings' element={<Settings />} />
           <Route path='/help-center' element={<HelpCenter />} />
           <Route path='/profile' element={<OpenProfile />} />
+          <Route path='/table-reservation-form' element={<TableReservationForm />} />
+          <Route path='/our-payment-option' element={<OurPaymentOption />} />
         </Routes>
         <Footer />
       </BrowserRouter>

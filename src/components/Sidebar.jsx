@@ -5,7 +5,7 @@ import { NavLink as Link, useLocation } from "react-router-dom"
 import User from "../../public/user.png"
 
 // Icons
-import { MdOutlineSpaceDashboard, MdManageHistory, MdOutlineBorderColor, MdOutlineAccountBalanceWallet, MdFastfood, MdOutlineSettings, MdHelp, MdLogout } from "react-icons/md";
+import { MdOutlineSpaceDashboard, MdOutlinePayment, MdManageHistory, MdOutlineBorderColor, MdOutlineAccountBalanceWallet, MdFastfood, MdOutlineSettings, MdHelp, MdLogout, MdTableBar } from "react-icons/md";
 import { FaKitchenSet } from "react-icons/fa6";
 import { TbSquareRoundedArrowRightFilled } from "react-icons/tb";
 
@@ -25,6 +25,7 @@ const Sidebar = () => {
         <>
             <div id='side_bar_left'>
                 <div id="sidebar_pc">
+                    <h6>Main</h6>
                     <ul>
                         <Link to="/dashboard">
                             <li>
@@ -46,9 +47,36 @@ const Sidebar = () => {
                                 <MdManageHistory className='side_menu_icon' /> History
                             </li>
                         </Link>
+                    </ul>
+
+                    <hr />
+                    <h6>Table</h6>
+                    <ul>
+                        <Link to="/table-reservation-form">
+                            <li>
+                                <MdTableBar className='side_menu_icon' /> Table Reservation Form
+                            </li>
+                        </Link>
+                    </ul>
+
+                    <hr />
+                    
+                    <h6>Kitchen</h6>
+                    <ul>
                         <Link to="/kitchen-menu">
                             <li>
                                 <FaKitchenSet className='side_menu_icon' /> Kitchen Menus
+                            </li>
+                        </Link>
+                    </ul>
+
+                    <hr />
+
+                    <h6>Payment</h6>
+                    <ul>
+                        <Link to="/our-payment-option">
+                            <li>
+                                <MdOutlinePayment className='side_menu_icon' /> Our Payment Option
                             </li>
                         </Link>
                     </ul>

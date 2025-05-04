@@ -3,7 +3,7 @@ import "../styles/navbar.css"
 import { NavLink as Link, useLocation } from 'react-router-dom';
 
 // Icons
-import { FaBell } from "react-icons/fa6";
+import { FaBell, FaCartShopping } from "react-icons/fa6";
 
 // image
 import Logo from "/public/logo.png"
@@ -31,9 +31,9 @@ const Navbar = () => {
                     </div>
                     <div>
                         <ul>
-                            <li className='nav_items'>
+                            {/* <li className='nav_items'>
                                 <Link to="/reservation">Reservation</Link>
-                            </li>
+                            </li> */}
                             <li className='nav_items employees_menu'>
                                 <Link to="/employee">Employees</Link>
                             </li>
@@ -60,13 +60,16 @@ const Navbar = () => {
                                     </select>
                                 </form>
                             </div>
+                            <div className='mx-2 notification_icon'>
+                                <Link to="/notification"><FaBell /><sup>01</sup></Link>
+                            </div>
+                            <div className='mx-2 cart_icon'>
+                                <Link to="#"><FaCartShopping /><sup>01</sup></Link>
+                            </div>
                             <div className='profile_img mx-2 shadow mobile_hide_profile'>
                                 <Link to="/profile">
                                     <img src={User} alt="" />
                                 </Link>
-                            </div>
-                            <div className='mx-2 notification_icon'>
-                                <Link to="/notification"><FaBell /></Link>
                             </div>
                         </div>
                     </div>
